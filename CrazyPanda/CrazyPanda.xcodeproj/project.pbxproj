@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C8471B61F7C855B006C846B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8471B51F7C855B006C846B /* AppDelegate.swift */; };
-		0C8471B81F7C855B006C846B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8471B71F7C855B006C846B /* ViewController.swift */; };
 		0C8471BA1F7C855B006C846B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C8471B91F7C855B006C846B /* Assets.xcassets */; };
-		0C8471BD1F7C855B006C846B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8471BB1F7C855B006C846B /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C8471B21F7C855B006C846B /* CrazyPanda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazyPanda.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C8471B51F7C855B006C846B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C8471B71F7C855B006C846B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0C8471B91F7C855B006C846B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0C8471BC1F7C855B006C846B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C8471BE1F7C855B006C846B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C8471BF1F7C855B006C846B /* CrazyPanda.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CrazyPanda.entitlements; sourceTree = "<group>"; };
+		0C8471CF1F7C8C50006C846B /* CrazyPanda-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrazyPanda-Bridging-Header.h"; sourceTree = "<group>"; };
+		0C8471D41F7C8C8A006C846B /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		0C8471D51F7C8C8A006C846B /* Play.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Play.storyboard; sourceTree = "<group>"; };
+		0C8471D71F7C8C8A006C846B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C8471D81F7C8C8A006C846B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0C8471D91F7C8C8A006C846B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +53,41 @@
 		0C8471B41F7C855B006C846B /* CrazyPanda */ = {
 			isa = PBXGroup;
 			children = (
-				0C8471B51F7C855B006C846B /* AppDelegate.swift */,
-				0C8471B71F7C855B006C846B /* ViewController.swift */,
+				0C8471D21F7C8C8A006C846B /* Controllers */,
 				0C8471B91F7C855B006C846B /* Assets.xcassets */,
-				0C8471BB1F7C855B006C846B /* Main.storyboard */,
 				0C8471BE1F7C855B006C846B /* Info.plist */,
+				0C8471CF1F7C8C50006C846B /* CrazyPanda-Bridging-Header.h */,
 				0C8471BF1F7C855B006C846B /* CrazyPanda.entitlements */,
 			);
 			path = CrazyPanda;
+			sourceTree = "<group>";
+		};
+		0C8471D21F7C8C8A006C846B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0C8471D61F7C8C8A006C846B /* Main */,
+				0C8471D31F7C8C8A006C846B /* Play */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0C8471D31F7C8C8A006C846B /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				0C8471D41F7C8C8A006C846B /* PlayViewController.swift */,
+				0C8471D51F7C8C8A006C846B /* Play.storyboard */,
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
+		0C8471D61F7C8C8A006C846B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0C8471D91F7C8C8A006C846B /* AppDelegate.swift */,
+				0C8471D71F7C8C8A006C846B /* ViewController.swift */,
+				0C8471D81F7C8C8A006C846B /* Main.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +122,7 @@
 				TargetAttributes = {
 					0C8471B11F7C855B006C846B = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,7 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C8471BA1F7C855B006C846B /* Assets.xcassets in Resources */,
-				0C8471BD1F7C855B006C846B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,23 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C8471B81F7C855B006C846B /* ViewController.swift in Sources */,
-				0C8471B61F7C855B006C846B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		0C8471BB1F7C855B006C846B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0C8471BC1F7C855B006C846B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0C8471C01F7C855B006C846B /* Debug */ = {
@@ -263,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CrazyPanda/CrazyPanda.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -271,6 +286,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crazypanda.CrazyPanda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CrazyPanda/Play/CrazyPanda-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -279,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CrazyPanda/CrazyPanda.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -287,6 +305,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crazypanda.CrazyPanda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CrazyPanda/Play/CrazyPanda-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

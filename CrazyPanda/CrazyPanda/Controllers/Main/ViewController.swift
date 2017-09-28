@@ -9,19 +9,21 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
+/*
+    @IBAction func show(_ sender: Any) {
+        
+        let storyboard = NSStoryboard(name: NSStoryboard.Name("Play"), bundle: nil)
+        let viewController = storyboard
+    }
+    
+*/
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override var representedObject: Any? {
         didSet {
-        // Update the view, if already loaded.
         }
     }
-
-
 }
 
