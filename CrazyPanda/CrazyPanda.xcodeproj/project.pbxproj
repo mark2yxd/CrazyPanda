@@ -10,7 +10,7 @@
 		0C994DBB1F7C971C00BAC2BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C994DBA1F7C971C00BAC2BD /* Assets.xcassets */; };
 		0C994DBE1F7C971C00BAC2BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C994DBC1F7C971C00BAC2BD /* Main.storyboard */; };
 		0C994DCF1F7C995600BAC2BD /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C994DCE1F7C995600BAC2BD /* PlayViewController.swift */; };
-		0C994DD01F7C9A6100BAC2BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C994DCC1F7C97CF00BAC2BD /* ViewController.swift */; };
+		0C994DD01F7C9A6100BAC2BD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C994DCC1F7C97CF00BAC2BD /* MainViewController.swift */; };
 		0C994DD11F7C9A6400BAC2BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C994DCD1F7C97CF00BAC2BD /* AppDelegate.swift */; };
 		0C994DD31F7C9A6B00BAC2BD /* Play.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C994DD51F7C9A6B00BAC2BD /* Play.storyboard */; };
 		0C994DD61F7C9A7500BAC2BD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C994DBF1F7C971C00BAC2BD /* Info.plist */; };
@@ -22,7 +22,7 @@
 		0C994DBD1F7C971C00BAC2BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C994DBF1F7C971C00BAC2BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C994DC01F7C971C00BAC2BD /* CrazyPanda.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CrazyPanda.entitlements; sourceTree = "<group>"; };
-		0C994DCC1F7C97CF00BAC2BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C994DCC1F7C97CF00BAC2BD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0C994DCD1F7C97CF00BAC2BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C994DCE1F7C995600BAC2BD /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		0C994DD41F7C9A6B00BAC2BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Play.storyboard; sourceTree = "<group>"; };
@@ -59,6 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				0C994DC81F7C97CF00BAC2BD /* Controllers */,
+				0C994DD91F7C9BBA00BAC2BD /* Models */,
+				0C994DD81F7C9BA300BAC2BD /* Views */,
 				0C994DBA1F7C971C00BAC2BD /* Assets.xcassets */,
 				0C994DBF1F7C971C00BAC2BD /* Info.plist */,
 				0C994DC01F7C971C00BAC2BD /* CrazyPanda.entitlements */,
@@ -87,11 +89,25 @@
 		0C994DCB1F7C97CF00BAC2BD /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				0C994DCC1F7C97CF00BAC2BD /* ViewController.swift */,
+				0C994DCC1F7C97CF00BAC2BD /* MainViewController.swift */,
 				0C994DCD1F7C97CF00BAC2BD /* AppDelegate.swift */,
 				0C994DBC1F7C971C00BAC2BD /* Main.storyboard */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		0C994DD81F7C9BA300BAC2BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0C994DD91F7C9BBA00BAC2BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,7 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C994DD11F7C9A6400BAC2BD /* AppDelegate.swift in Sources */,
-				0C994DD01F7C9A6100BAC2BD /* ViewController.swift in Sources */,
+				0C994DD01F7C9A6100BAC2BD /* MainViewController.swift in Sources */,
 				0C994DCF1F7C995600BAC2BD /* PlayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
