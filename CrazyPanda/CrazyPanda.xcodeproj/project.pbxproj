@@ -13,7 +13,6 @@
 		0C994DD01F7C9A6100BAC2BD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C994DCC1F7C97CF00BAC2BD /* MainViewController.swift */; };
 		0C994DD11F7C9A6400BAC2BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C994DCD1F7C97CF00BAC2BD /* AppDelegate.swift */; };
 		0C994DD31F7C9A6B00BAC2BD /* Play.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C994DD51F7C9A6B00BAC2BD /* Play.storyboard */; };
-		0C994DD61F7C9A7500BAC2BD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C994DBF1F7C971C00BAC2BD /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -170,7 +169,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C994DD61F7C9A7500BAC2BD /* Info.plist in Resources */,
 				0C994DBB1F7C971C00BAC2BD /* Assets.xcassets in Resources */,
 				0C994DD31F7C9A6B00BAC2BD /* Play.storyboard in Resources */,
 				0C994DBE1F7C971C00BAC2BD /* Main.storyboard in Resources */,
@@ -321,7 +319,7 @@
 		0C994DC41F7C971C00BAC2BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-CrazyPanda";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CrazyPanda/CrazyPanda.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -339,7 +337,7 @@
 		0C994DC51F7C971C00BAC2BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-CrazyPanda";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CrazyPanda/CrazyPanda.entitlements;
 				CODE_SIGN_STYLE = Automatic;
